@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:gravity="center">
+
+        <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnLock"
+				android:layout_gravity="center_horizontal"
+				android:background="@drawable/lock_on" />
+
+			<TextView
+	            android:id="@+id/tvLockState"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Locked"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+				android:linksClickable="false" />
+		</LinearLayout>
+		<LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnTemperature"
+				android:layout_gravity="center_horizontal"
+				android:background="@drawable/thermometer" />
+
+			<TextView
+	            android:id="@+id/tvTemperature"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="C/F"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		</LinearLayout>
+        
+    </TableRow>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B7B7B7"/>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:gravity="center">
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <ImageView
+	            android:id="@+id/imageView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/weighing_scale" />
+	        <TextView
+	            android:id="@+id/tvWeighingScale"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Weighing Scale"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnSecurity"
+				android:layout_gravity="center_horizontal"
+				android:background="@drawable/warn" />
+
+			<TextView
+	            android:id="@+id/tvSecurity"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="SECURITY"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>
+    </TableRow>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B7B7B7"/>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:gravity="center">
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVConfig">
+	        <ImageView
+	            android:id="@+id/imageView5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_config"
+	            android:onClick="onIVConfig" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="BT Config"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVExit">
+	        <ImageView
+	            android:id="@+id/imageView6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_exit" 
+	            android:onClick="onIVExit"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Exit"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        
+    </TableRow>
+  
+</TableLayout>  

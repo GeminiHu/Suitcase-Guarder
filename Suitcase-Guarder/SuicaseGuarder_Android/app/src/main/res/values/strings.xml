@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Suitcase Guarder</string>
+    <string name="title_activity_main">BT Data Comm</string>
+    <string name="login_title">LogIn</string>
+    <string name="main_page_title">MainPage</string>
+    <string name="btn_ON">LED ON</string>
+    <string name="btn_OFF">LED OFF</string>
+    <string name="text_LED_status">LED Status:</string>
+    <string name="LED_status_unknown">x</string>
+    <string name="text_LED_volt">LED   Volt:</string>
+    <string name="LED_unknown_volt">x</string>
+
+</resources>

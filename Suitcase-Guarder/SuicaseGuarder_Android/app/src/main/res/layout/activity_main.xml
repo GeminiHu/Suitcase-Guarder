@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainPage">
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/btn_OFF" />
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOff"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_ON" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.5"
+        android:src="@mipmap/ic_ucr_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_LED_status"
+        android:id="@+id/text_LED_Status"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/txtDataArduino"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_LED_volt"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/txtDataArduino2"
+        android:layout_toLeftOf="@+id/btnOff"
+        android:layout_toStartOf="@+id/btnOff" />
+
+    <TextView
+        android:id="@+id/txtDataArduino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/LED_status_unknown"
+        android:layout_above="@+id/txtDataArduino2"
+        android:layout_toRightOf="@+id/btnOff"
+        android:layout_toEndOf="@+id/btnOff" />
+
+    <TextView
+        android:id="@+id/txtDataArduino2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/LED_unknown_volt"
+        android:layout_marginBottom="71dp"
+        android:layout_above="@+id/btnOn"
+        android:layout_alignLeft="@+id/txtDataArduino"
+        android:layout_alignStart="@+id/txtDataArduino" />
+
+</RelativeLayout>
